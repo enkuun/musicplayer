@@ -1,0 +1,126 @@
+body{
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    font-family: 'Heebo', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    color: #030E35;
+}
+.container{
+    display: flex;
+    justify-content: space-around;
+    background: #fff;
+    border: 1px solid #dbdbdb;
+    border-radius: 5px;
+    width: auto;
+    background: #fafafa;
+}
+
+.main{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    padding: 20px 50px;
+}
+.playList{
+    padding: 20px 0;
+}
+.playList > p{
+ font-size: 20px;
+ font-weight: bold;
+ margin: 30px 30px 30px 10px;
+ width: 200px;
+ color: #030E35;
+ text-align: center;
+ 
+}
+
+#playMusic > p:hover{
+    cursor: pointer;
+    /* color: #0B40FF; */
+    font-size: 18px;
+}
+.active{
+color: #0B40FF;
+}
+.image{
+    height: 250px;
+    width: 250px;
+    border: 1px solid none;
+    margin-left: 30px;
+    margin-right: 30px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+.songDetails{
+    margin-left: 30px;
+    font-weight: 350;
+
+}
+.sliderContainer, .seekBarContainer{
+    margin-left: 30px;
+    width: auto;
+}
+.sliderContainer>.slider{
+    -webkit-appearance: none;
+    height: 6px;
+    width: auto;
+    background: #0B40FF;
+    border-radius: 50px;
+    outline: none;
+    margin-left: 30px;
+    cursor: pointer;
+}
+
+#volumeIcon{
+    position: absolute;
+    color: #0B40FF;
+}
+.controls{
+    display: flex;
+    justify-content: space-between;
+    padding: 30px;
+    color: #0B40FF;
+}
+.controls span{
+    font-size: 40px;
+    cursor: pointer;
+}
+.name{
+    font-size: 18px;
+    color: #000000;
+    font-weight: normal;
+}
+.artist{
+    font-size: 15px;
+    color: #0B40FF;
+    font-weight: lighter;
+}
+
+.seekBar{
+    background: #0B40FF;
+    height: 3px;
+    width: 250px;
+    margin-bottom: 5px;
+    margin-top: 1;
+    -webkit-appearance: none;
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+.timer{
+    margin: 2px 30px 5px 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+.timer span{
+    font-size: 12px;
+    color: #515c6f;
+    margin-bottom: 5px;
+}

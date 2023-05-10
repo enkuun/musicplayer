@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Player</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined"
+      rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Heebo:wght@200;400&family=Roboto:ital,wght@0,100;0,400;1,100&display=swap" rel="stylesheet">
+
+
+</head>
+<body>
+    <div class="container">
+        <div class="main">
+            <div class="image">
+                <img src="" alt="" id="img">
+            </div>
+            <div class="songDetails" style="text-align: center;">
+                <p class="name" id="name"></p>
+                <p class="artist" id="artist"></p>
+            </div>
+
+            <div class="seekBarContainer">
+                <input type="range" name="seekBar" id="seekBar" class="seekBar" value="" onchange="changeDuration()">
+            </div>
+
+            <div class="timer">
+                <span class="current" id="trackCurrentDuration">0:00</span>
+                <span class="current" id="totalDuration">3:30</span>
+            </div>
+            <div class="controls">
+                <span class="material-icons-outlined" id="prev" onclick="prevSong()">skip_previous</span>
+                <span class="material-icons-outlined" id="play" onclick="playAndPause()">play_circle</span>
+                <span class="material-icons-outlined" id="next" onclick="nextSong()">skip_next</span>
+            </div>
+            <div class="sliderContainer">
+                <span class="material-icons-outlined" id="volumeIcon" onclick="muteSound()"> volume_up</span>
+                <input type="range" name="range" class="slider" id="volume" min="0" max="100" value="" onchange="changeVolume()">
+            </div>
+        </div>
+        <div class="playList">
+            <p> Playlist </p>
+            <ul id="playMusic">
+            </ul>
+        </div>
+    </div>
+        
+</body>
+<script src="main.js"></script>
+</html>   
